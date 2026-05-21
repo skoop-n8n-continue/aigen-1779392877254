@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mid-Week Deals</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/SplitText.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="scene">
+        <div id="background"></div>
+        <div id="overlay"></div>
+
+        <div id="main-title-container">
+            <h1 id="main-title">Mid-Week<br><span class="highlight">Specials</span></h1>
+        </div>
+
+        <div id="deals-container">
+            <!-- Dynamically populated by JS -->
+        </div>
+
+        <div id="products-container"></div>
+    </div>
+    <script src="animation.js"></script>
+</body>
+</html>
