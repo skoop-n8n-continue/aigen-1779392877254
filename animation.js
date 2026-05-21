@@ -21,11 +21,16 @@ async function loadProducts() {
 
 function init() {
     renderDeals();
-    startMasterTimeline();
+
+    // Slight delay to ensure DOM is ready before animating
+    setTimeout(() => {
+        startMasterTimeline();
+    }, 100);
 }
 
 function renderDeals() {
     const container = document.getElementById('deals-container');
+    container.innerHTML = ''; // Clear container before rendering to avoid duplicates
     DEALS.forEach((deal, index) => {
         const dealEl = document.createElement('div');
         dealEl.className = 'deal-card';

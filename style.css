@@ -76,7 +76,7 @@ body {
     align-items: center;
     gap: 40px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-    opacity: 0;
+    opacity: 1; /* Changed from 0 so they appear without JS for fallback, but GSAP animates from 0 */
 }
 
 .deal-day {
