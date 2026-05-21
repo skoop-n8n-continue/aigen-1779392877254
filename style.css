@@ -37,7 +37,8 @@ body {
 
 #main-title-container {
     position: absolute;
-    top: 80px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 100px;
     z-index: 10;
 }
@@ -57,8 +58,9 @@ body {
 
 #deals-container {
     position: absolute;
-    bottom: 100px;
-    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 650px;
     width: 700px;
     z-index: 15;
     display: flex;
